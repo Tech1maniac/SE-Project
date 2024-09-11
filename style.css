@@ -1,0 +1,481 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.head {
+    margin-right: 68%;
+    margin-left: 19px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    /* background-color: #3498DB; */
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+input {
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 2px 4px 20px -1px;
+
+}
+
+input::placeholder {
+    color: white;
+}
+
+
+.navbar {
+    width: 100%;
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    z-index: 10;
+    height: 20px;
+}
+
+.navbar .logo {
+    width: 60px;
+    border-radius: 40%;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 30px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 25px;
+    background: transparent;
+    outline: invert;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    /* background-color: aliceblue;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content; */
+}
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: rgb(254, 254, 254);
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url("sp4.jpg");
+    background-size: 1550px;
+    background-position: center;
+    position: relative;
+}
+
+.main {
+    /* display: flex; */
+    height: 100vh;
+    padding: 0.5rem;
+    background-image: url("sp4.jpg");
+    background-size: 1550px;
+
+}
+
+
+/* sidebar 
+.sidebar{
+    align-items:center;
+    height:600px;
+    background-color: #232323;
+    width: 300px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    margin-top: 3%;
+    border-style: solid rgb(255, 255, 255);
+    box-shadow:2px 2px 2px #0b0838;
+
+}
+.maincontent{
+  
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    padding: 0 0.5rem 0 0.5rem;
+
+}
+*/
+.musicplayer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.navop {
+    line-height: 2.5rem;
+    padding: 4%;
+    opacity: 1;
+    margin: 14px 14px 14px 14px;
+    font-size: 80px;
+    margin-left: 15px;
+    opacity: 10%;
+}
+
+
+
+.f {
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+.navi {
+    border-radius: 1rem;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 0.5rem 0.75rem;
+    justify-content: top;
+    /* opacity: 10%; */
+}
+
+.navop {
+    line-height: 2.7rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+
+.navop:hover {
+    opacity: 2;
+    transition-duration: 0.25s;
+}
+
+.navop i {
+    font-size: 1.25rem;
+}
+
+.navop a {
+    margin-top: 0px;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library {
+    border-radius: 1rem;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 0.5px;
+}
+
+.options {
+    justify-content: space-between;
+    display: flex;
+    align-items: top;
+    padding: 0.5rem 0.75rem;
+}
+
+.options img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    display: flex;
+
+}
+
+.icons i {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+    display: flex;
+}
+
+.icons:hover {
+    opacity: 300%;
+}
+
+.set1 {
+    padding: 0.1rem 0.1rem;
+}
+
+.box {
+    height: 7rem;
+
+    border-radius: 0.75rem;
+    margin: 0.25rem 0 0.5rem 0;
+    padding: 0.5rem 1.25rem;
+}
+
+.bline {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.line {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content;
+}
+
+.box1 {
+    height: 9rem;
+
+    border-radius: 0.75rem;
+    margin: 1rem 0 0.5rem 0;
+    padding: 1rem 1.25rem;
+}
+
+.sticky {
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    z-index: 15;
+}
+
+.m2 {
+    display: flex;
+    margin-right: 0.5rem;
+    justify-content: center;
+}
+
+.mk {
+    margin-right: 1.2rem;
+}
+
+.m2 i {
+    margin-top: 0.6rem;
+}
+
+.dk {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.m1 img {
+    height: 24px;
+    width: 24px;
+}
+
+.rk {
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content;
+}
+
+.oc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c {
+    background-color: #232323;
+    border-radius: 0.25rem;
+    width: 180px;
+    padding: 0.8rem;
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+
+}
+
+.c img {
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 150px;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lines {
+    width: 90%;
+    height: 60%;
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+
+.c img:hover {
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 150px;
+    box-shadow: 8px 8px 8px #121212;
+    transition-duration: 0.5s;
+}
+
+.c:hover {
+    background-color: #322d2d;
+    border-radius: 0.25rem;
+    width: 180px;
+    padding: 0.8rem;
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+    transition-duration: 1s;
+}
+
+/*rounak*/
+.container {
+    display: flex;
+    /* flex-direction: row; /* Align both wrappers horizontally */
+}
+
+.sidebar {
+    height: calc(70vh - 8rem);
+    /* Adjust sidebar height */
+    width: 350px;
+    /* Increase sidebar width */
+    background-color: #232323;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    margin-top: 3%;
+    box-shadow: 2px 2px 2px #0b0838;
+
+    top: 3.5rem;
+    /* Adjust top position to match navbar height */
+}
+
+/* Adjust main content */
+.maincontent {
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+/* Adjust wrapper */
+/* Adjust wrapper */
+.wrapper {
+    height: 350px;
+    /* Adjust wrapper height */
+    width: calc(100% - 1270px);
+    /* Adjust wrapper width considering the increased sidebar width */
+    /* border: 1px solid black; */
+    display: flex;
+    overflow-x: auto;
+    /* background-image: url("home.avif"); */
+    margin-left: 1rem;
+    /* Adjust margin-left */
+    margin-top: 0%;
+    /* Adjust margin-top */
+    padding: 1rem;
+    /* Add padding for spacing */
+}
+
+.wrapper span {
+    font-family: "Madimi One", sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+.wrapper .item {
+    min-width: 300px;
+    height: 300px;
+
+    text-align: center;
+    margin: 20px;
+    /* Adjust margin for spacing */
+    border-radius: 25px;
+
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+}
+
+/*rounak*/
